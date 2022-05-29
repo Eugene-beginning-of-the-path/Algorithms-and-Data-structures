@@ -1,0 +1,7 @@
+﻿  Algorithms.cpp
+D:\codding\Algorithms\Algorithms.cpp(7,1): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+  Linear_search.cpp
+D:\codding\Algorithms\Linear_search.cpp(11,17): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+D:\codding\Algorithms\Linear_search.cpp(17,14): error C3861: linear_search: идентификатор не найден
+D:\codding\Algorithms\Linear_search.cpp(29,12): warning C4267: return: преобразование из "size_t" в "int"; возможна потеря данных
+  Создание кода...

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Исходные файлы\Sort and search">
+      <UniqueIdentifier>{f3eee898-4beb-4e1d-be33-1edfba74b585}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Sort and search\Search algorithms">
+      <UniqueIdentifier>{ec8e3512-d1b3-4c5d-b3d4-a64b65d5a5a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Sort and search\Sort algorithms">
+      <UniqueIdentifier>{c2631f98-da65-402b-b77c-fb6effa7bffc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Data structures">
+      <UniqueIdentifier>{5b23a1d5-eb54-4bc2-8cd8-a4b22b30d373}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Bubble_sort_arrayOfObject.cpp">
+      <Filter>Исходные файлы\Sort and search\Sort algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="Insert_sort_array.cpp">
+      <Filter>Исходные файлы\Sort and search\Sort algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="Linear_search.cpp">
+      <Filter>Исходные файлы\Sort and search\Search algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="Binary_search.cpp">
+      <Filter>Исходные файлы\Sort and search\Search algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithms.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="List-class.cpp">
+      <Filter>Исходные файлы\Data structures</Filter>
+    </ClCompile>
+    <ClCompile Include="List-class-template.cpp">
+      <Filter>Исходные файлы\Data structures</Filter>
+    </ClCompile>
+    <ClCompile Include="Queue.cpp">
+      <Filter>Исходные файлы\Data structures</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
