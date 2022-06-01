@@ -21,7 +21,7 @@ void insert_sort(int* arr)
 	}
 }
 
-void display_arr(int* arr)
+static void display_arr(int* arr)
 {
 	for (int i = 0; i < SIZE; i++)
 	{

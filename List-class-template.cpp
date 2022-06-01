@@ -10,16 +10,16 @@ using namespace std;
 ////////////////////////////
 
 template <typename T>
-class List
+class ListTemplate
 {
 public:
-    List();
+    ListTemplate();
     void push_back(T data);
     void pop_front(); //удаление первого эл-нта списка
     void display();
     int get_Size() { return Size; }
     T& operator[] (const int index);
-    ~List();
+    ~ListTemplate();
 
 private:
     template <typename T>
@@ -42,14 +42,14 @@ private:
 };
 
 template <typename T>   
-List<T>::List()
+ListTemplate<T>::ListTemplate()
 {
     Size = 0;
     first = nullptr;
 }
 
 template<typename T>
-void List<T>::push_back(T data)
+void ListTemplate<T>::push_back(T data)
 {
     if (first == nullptr)
     {
@@ -72,7 +72,7 @@ void List<T>::push_back(T data)
 }
 
 template<typename T>
-void List<T>::pop_front() //удаление первого эл-нта списка
+void ListTemplate<T>::pop_front() //удаление первого эл-нта списка
 {
     Element<T>* temp = first;
     first = first->ptr_next;
@@ -81,7 +81,7 @@ void List<T>::pop_front() //удаление первого эл-нта спис
 }
 
 template<typename T>
-void List<T>::display()
+void ListTemplate<T>::display()
 {
     Element<T>* current = first;//с помощью указателя передвигаемся по эл-нтам списка
     int index = 0;
@@ -96,7 +96,7 @@ void List<T>::display()
 }
 
 template<typename T>
-T& List<T>::operator[](const int index)
+T& ListTemplate<T>::operator[](const int index)
 {
     int counter = 0; //счетчик, по скольким элементам мы пробежались
     Element <T>* current = first; //указатель на первый элемент списка
@@ -113,7 +113,7 @@ T& List<T>::operator[](const int index)
 }
 
 template <typename T>
-List<T>::~List()
+ListTemplate<T>::~ListTemplate()
 {
 
 }
@@ -121,7 +121,7 @@ List<T>::~List()
 void start_list_class_template()
 {
     setlocale(LC_ALL, "rus");
-    List<int> lst;
+    ListTemplate<int> lst;
 
     int size; 
     cin >> size;//выбираем размер будущющего списка

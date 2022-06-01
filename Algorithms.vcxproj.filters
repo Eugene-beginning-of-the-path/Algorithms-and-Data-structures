@@ -51,5 +51,8 @@
     <ClCompile Include="Queue.cpp">
       <Filter>Исходные файлы\Data structures</Filter>
     </ClCompile>
+    <ClCompile Include="Merge_sort_array.cpp">
+      <Filter>Исходные файлы\Sort and search\Sort algorithms</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
