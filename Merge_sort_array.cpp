@@ -48,8 +48,8 @@ void merg(int arr[], int left, int right)
 //							 0			2
 void mergSort(int* arr, int left, int right)
 {
-	if (left < right) ///если в последовательности 1 элемент 
-		if (right - left == 1) //если в последовательности 2 элемента
+	if (left < right) ///если в последовательности хот€ бы 2 элемента и больше (при 1 эл-нте не пройлет)
+		if (right - left == 1) //если в последовательности ровно 2 элемента
 		{
 			if (arr[left] > arr[right]) 
 			{
@@ -60,7 +60,7 @@ void mergSort(int* arr, int left, int right)
 		}
 		else 
 		{
-			int middle = (left + right) / 2;
+			int middle = (left + right) / 2; 
 
 			mergSort(arr, left, middle);
 			mergSort(arr, middle + 1, right);
@@ -69,20 +69,6 @@ void mergSort(int* arr, int left, int right)
 		}
 
 }
-
-//void input(int* m, int& amp; n)
-//{
-//
-//	cout& lt; &lt; &quot; ¬ведите количество элементов массива& quot;;
-//	cin& gt; &gt; n;
-//	for (int i = 0; i & lt; n; i++)
-//	{
-//		cout& lt; &lt; &quot; a[&quot; &lt; &lt; i& lt; &lt; &quot; ] = &quot;;
-//
-//		cin& gt; &gt; m[i];
-//	}
-//
-//}
 
 static void display_arr(int* arr)
 {

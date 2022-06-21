@@ -3,7 +3,7 @@
 //Big O = (log N)
 int binary_search(int arr[], const int size, int key)
 {
-	int left = 0, right = size;
+	int left = 0, right = size - 1;
 	int middle;
 
 	while (1)

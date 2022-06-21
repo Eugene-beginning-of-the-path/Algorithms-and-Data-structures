@@ -1,5 +1,2 @@
-﻿  Algorithms.cpp
-D:\Programs\Repositories\Algorithms-and-Data-structures\Algorithms.cpp(9,1): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
-  Merge_sort_array.cpp
-  Создание кода...
-  Algorithms.vcxproj -> D:\Programs\Repositories\Algorithms-and-Data-structures\x64\Debug\Algorithms.exe
+﻿  Merge_sort_array.cpp
+  Algorithms.vcxproj -> D:\Codding\Repositories\Algorithms-and-Data-structures\x64\Debug\Algorithms.exe
