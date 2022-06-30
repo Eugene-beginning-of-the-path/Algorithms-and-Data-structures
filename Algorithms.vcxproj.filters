@@ -25,6 +25,9 @@
     <Filter Include="Исходные файлы\Data structures">
       <UniqueIdentifier>{5b23a1d5-eb54-4bc2-8cd8-a4b22b30d373}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы\With lines">
+      <UniqueIdentifier>{473dc549-fec8-4986-af05-a8bf60ea415d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Bubble_sort_arrayOfObject.cpp">
@@ -53,6 +56,12 @@
     </ClCompile>
     <ClCompile Include="Merge_sort_array.cpp">
       <Filter>Исходные файлы\Sort and search\Sort algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="Flipping_line.cpp">
+      <Filter>Исходные файлы\With lines</Filter>
+    </ClCompile>
+    <ClCompile Include="Parsing_Line.cpp">
+      <Filter>Исходные файлы\With lines</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

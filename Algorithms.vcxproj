@@ -42,7 +42,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
@@ -142,10 +142,12 @@
     <ClCompile Include="Algorithms.cpp" />
     <ClCompile Include="Binary_search.cpp" />
     <ClCompile Include="Bubble_sort_arrayOfObject.cpp" />
+    <ClCompile Include="Flipping_line.cpp" />
     <ClCompile Include="Insert_sort_array.cpp" />
     <ClCompile Include="Linear_search.cpp" />
     <ClCompile Include="List-class-template.cpp" />
     <ClCompile Include="List-class.cpp" />
+    <ClCompile Include="Parsing_Line.cpp" />
     <ClCompile Include="Queue.cpp" />
     <ClCompile Include="Merge_sort_array.cpp" />
   </ItemGroup>
