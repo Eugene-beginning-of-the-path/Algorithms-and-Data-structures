@@ -4,7 +4,7 @@ using namespace std;
 
 const int SIZE = 5;
 
-void merg(int arr[], int left, int right)
+void Merge(int arr[], int left, int right)
 {
 	int i = left; //для интерации по левой последовательности 
 	int middle = left + (right - left) / 2;
@@ -46,7 +46,7 @@ void merg(int arr[], int left, int right)
 		arr[left + i] = arrMerged[i];
 }
 //							 0			2
-void mergSort(int* arr, int left, int right)
+void Sort(int* arr, int left, int right)
 {
 	if (left < right) ///если в последовательности хотя бы 2 элемента и больше (при 1 эл-нте не пройлет)
 		if (right - left == 1) //если в последовательности ровно 2 элемента
@@ -62,10 +62,10 @@ void mergSort(int* arr, int left, int right)
 		{
 			int middle = (left + right) / 2; 
 
-			mergSort(arr, left, middle);
-			mergSort(arr, middle + 1, right);
+			Sort(arr, left, middle);
+			Sort(arr, middle + 1, right);
 
-			merg(arr, left, right);
+			Merge(arr, left, right);
 		}
 
 }
@@ -81,10 +81,10 @@ static void display_arr(int* arr)
 
 void start_merge_sort()
 {
-	// 4 2 1
+	
 
 	int arr[SIZE] = { 8, 2, 1, 7, 3 };
 	display_arr(arr); 
-	mergSort(arr, 0, SIZE - 1);
-	display_arr(arr); //(-trash) 1 2 3 8 
+	Sort(arr, 0, SIZE - 1);
+	display_arr(arr); 
 }
