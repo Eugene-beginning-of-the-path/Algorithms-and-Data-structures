@@ -3,59 +3,59 @@
   <ItemGroup>
     <ClCompile Include="Algorithms.cpp" />
     <ClCompile Include="List-class-template.cpp">
-      <Filter>Initial Data\Data structures</Filter>
+      <Filter>Исходные данные\Data structures</Filter>
     </ClCompile>
     <ClCompile Include="List-class.cpp">
-      <Filter>Initial Data\Data structures</Filter>
+      <Filter>Исходные данные\Data structures</Filter>
     </ClCompile>
     <ClCompile Include="Queue.cpp">
-      <Filter>Initial Data\Data structures</Filter>
+      <Filter>Исходные данные\Data structures</Filter>
     </ClCompile>
     <ClCompile Include="Linear_search.cpp">
-      <Filter>Initial Data\Sort and search\Search algorithms</Filter>
+      <Filter>Исходные данные\Sort and search\Search algorithms</Filter>
     </ClCompile>
     <ClCompile Include="Binary_search.cpp">
-      <Filter>Initial Data\Sort and search\Search algorithms</Filter>
+      <Filter>Исходные данные\Sort and search\Search algorithms</Filter>
     </ClCompile>
     <ClCompile Include="Bubble_sort_arrayOfObject.cpp">
-      <Filter>Initial Data\Sort and search\Sort algorithms</Filter>
+      <Filter>Исходные данные\Sort and search\Sort algorithms</Filter>
     </ClCompile>
     <ClCompile Include="Merge_sort_array.cpp">
-      <Filter>Initial Data\Sort and search\Sort algorithms</Filter>
+      <Filter>Исходные данные\Sort and search\Sort algorithms</Filter>
     </ClCompile>
     <ClCompile Include="Insert_sort_array.cpp">
-      <Filter>Initial Data\Sort and search\Sort algorithms</Filter>
+      <Filter>Исходные данные\Sort and search\Sort algorithms</Filter>
     </ClCompile>
     <ClCompile Include="Flipping_line.cpp">
-      <Filter>Initial Data\With lines</Filter>
+      <Filter>Исходные данные\With lines</Filter>
     </ClCompile>
     <ClCompile Include="Parsing_Line.cpp">
-      <Filter>Initial Data\With lines</Filter>
+      <Filter>Исходные данные\With lines</Filter>
     </ClCompile>
     <ClCompile Include="Stack.cpp">
-      <Filter>Initial Data\Data structures</Filter>
+      <Filter>Исходные данные\Data structures</Filter>
     </ClCompile>
     <ClCompile Include="SomeWorkWithChar.cpp">
-      <Filter>Initial Data</Filter>
+      <Filter>Исходные данные</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="Initial Data">
+    <Filter Include="Исходные данные">
       <UniqueIdentifier>{1a4d405f-feda-48eb-856d-a1f562b0e392}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Initial Data\Data structures">
+    <Filter Include="Исходные данные\Data structures">
       <UniqueIdentifier>{9ddb9e3d-fec6-40a7-9bce-dca17b1167cf}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Initial Data\Sort and search">
+    <Filter Include="Исходные данные\Sort and search">
       <UniqueIdentifier>{36515092-1886-4fe3-9425-d3d2a289c391}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Initial Data\Sort and search\Search algorithms">
+    <Filter Include="Исходные данные\Sort and search\Search algorithms">
       <UniqueIdentifier>{2ab467a5-e393-4098-adb9-9f8a90184f1f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Initial Data\Sort and search\Sort algorithms">
+    <Filter Include="Исходные данные\Sort and search\Sort algorithms">
       <UniqueIdentifier>{5e442ec8-0faa-4bb2-a1b9-27e24ebbc46c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Initial Data\With lines">
+    <Filter Include="Исходные данные\With lines">
       <UniqueIdentifier>{752f5e47-61f3-47c7-9788-ac2d1147ede5}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
