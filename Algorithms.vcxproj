@@ -150,6 +150,7 @@
     <ClCompile Include="Parsing_Line.cpp" />
     <ClCompile Include="Queue.cpp" />
     <ClCompile Include="Merge_sort_array.cpp" />
+    <ClCompile Include="SomeWorkWithChar.cpp" />
     <ClCompile Include="Stack.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
