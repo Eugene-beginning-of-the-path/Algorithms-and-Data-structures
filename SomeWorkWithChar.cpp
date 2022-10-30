@@ -78,7 +78,7 @@ void foo()
 
 
 
-void main()
+void start_someWorkWithChar()
 {
 	foo();
 #ifdef DEF

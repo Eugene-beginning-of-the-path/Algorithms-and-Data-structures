@@ -6,10 +6,11 @@ void start_insert_sort();
 void start_linear_search();
 void start_merge_sort();
 void start_binary_search();
+void flipLine();
 
 void main()
 {
-	start_merge_sort();
+	flipLine();
 }
 
 //void Merge(int A[], int p, int q, int r);

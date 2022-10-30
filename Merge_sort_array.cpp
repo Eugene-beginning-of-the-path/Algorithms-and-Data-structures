@@ -46,9 +46,9 @@ void Merge(int arr[], int left, int right)
 		arr[left + i] = arrMerged[i];
 }
 //							 0			2
-void Sort(int* arr, int left, int right)
+void Sort(int* arr, int left, int right) //left and right - must be index of elements
 {
-	if (left < right) ///если в последовательности хотя бы 2 элемента и больше (при 1 эл-нте не пройлет)
+	if (left < right) ///если в последовательности хотя бы 2 элемента и больше (при 1 эл-нте не пройдет)
 		if (right - left == 1) //если в последовательности ровно 2 элемента
 		{
 			if (arr[left] > arr[right]) 
@@ -60,7 +60,7 @@ void Sort(int* arr, int left, int right)
 		}
 		else 
 		{
-			int middle = (left + right) / 2; 
+			int middle = (left + right) / 2; //здесь тоже индекс элемента
 
 			Sort(arr, left, middle);
 			Sort(arr, middle + 1, right);

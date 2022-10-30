@@ -98,7 +98,7 @@ public:
     int GetSize() { return size; }
 };
 
-int start_stack()
+void start_stack()
 {
     setlocale(LC_ALL, "rus");
 
