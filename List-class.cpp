@@ -1,23 +1,23 @@
 #include <iostream>
 
-//Односвязный линейный Список
+//РћРґРЅРѕСЃРІСЏР·РЅС‹Р№ Р»РёРЅРµР№РЅС‹Р№ РЎРїРёСЃРѕРє
 //Single linked lineary list
 
 class Node
 {
-	//все поля закрыты
+	//РІСЃРµ РїРѕР»СЏ Р·Р°РєСЂС‹С‚С‹
 	Node* next;
 	int field;
 
-	//с полями данного класса может работать только класс списка
+	//СЃ РїРѕР»СЏРјРё РґР°РЅРЅРѕРіРѕ РєР»Р°СЃСЃР° РјРѕР¶РµС‚ СЂР°Р±РѕС‚Р°С‚СЊ С‚РѕР»СЊРєРѕ РєР»Р°СЃСЃ СЃРїРёСЃРєР°
 	friend class List;
 };
 
 class List
 {
 private:
-	Node* head; //указатель на корень списка
-	int count; //кол-во узлов списка
+	Node* head; //СѓРєР°Р·Р°С‚РµР»СЊ РЅР° РєРѕСЂРµРЅСЊ СЃРїРёСЃРєР°
+	int count; //РєРѕР»-РІРѕ СѓР·Р»РѕРІ СЃРїРёСЃРєР°
 
 public:
 	List()
@@ -26,31 +26,31 @@ public:
 		count = 0;
 	}
 	
-	//Основные методы работы со списком//
+	//РћСЃРЅРѕРІРЅС‹Рµ РјРµС‚РѕРґС‹ СЂР°Р±РѕС‚С‹ СЃРѕ СЃРїРёСЃРєРѕРј//
 	void add(int, Node*);
 	void print();
 	void clear();
 
-	//Вспомогательные методы, которые могут быть полезны в некоторых ситуациях//
-	bool isEmpty() { return head == nullptr; } //возвращает, пуст ли список
-	int getCount() { return count; } //возвращает кол-во узлов в списке
-	int getValue(Node* node) { return node->field; } //возвращает значение узла
-	void setValue(int data, Node* node) { node->field = data; } //присваивает значение 
-	//определенному узлу
-	Node* next(Node* node) { return node->next; } //возвращает адрес след.узла, стоящий за переданным
-	Node* previous(Node*); //возвращает адрес предыдущ.узла, стоящего перед переданным
-	Node* del(Node*); //удаляет переданный адрес узла из списка и возвращ. предыдущ. узел
-	Node* getFirst() { return head; } //возвращает адрес корня списка
-	Node* getLast(); //возвращает адрес последнего узла списка
-	void swap(Node*, Node*); //меняет местами два переданных узла в списке
+	//Р’СЃРїРѕРјРѕРіР°С‚РµР»СЊРЅС‹Рµ РјРµС‚РѕРґС‹, РєРѕС‚РѕСЂС‹Рµ РјРѕРіСѓС‚ Р±С‹С‚СЊ РїРѕР»РµР·РЅС‹ РІ РЅРµРєРѕС‚РѕСЂС‹С… СЃРёС‚СѓР°С†РёСЏС…//
+	bool isEmpty() { return head == nullptr; } //РІРѕР·РІСЂР°С‰Р°РµС‚, РїСѓСЃС‚ Р»Рё СЃРїРёСЃРѕРє
+	int getCount() { return count; } //РІРѕР·РІСЂР°С‰Р°РµС‚ РєРѕР»-РІРѕ СѓР·Р»РѕРІ РІ СЃРїРёСЃРєРµ
+	int getValue(Node* node) { return node->field; } //РІРѕР·РІСЂР°С‰Р°РµС‚ Р·РЅР°С‡РµРЅРёРµ СѓР·Р»Р°
+	void setValue(int data, Node* node) { node->field = data; } //РїСЂРёСЃРІР°РёРІР°РµС‚ Р·РЅР°С‡РµРЅРёРµ 
+	//РѕРїСЂРµРґРµР»РµРЅРЅРѕРјСѓ СѓР·Р»Сѓ
+	Node* next(Node* node) { return node->next; } //РІРѕР·РІСЂР°С‰Р°РµС‚ Р°РґСЂРµСЃ СЃР»РµРґ.СѓР·Р»Р°, СЃС‚РѕСЏС‰РёР№ Р·Р° РїРµСЂРµРґР°РЅРЅС‹Рј
+	Node* previous(Node*); //РІРѕР·РІСЂР°С‰Р°РµС‚ Р°РґСЂРµСЃ РїСЂРµРґС‹РґСѓС‰.СѓР·Р»Р°, СЃС‚РѕСЏС‰РµРіРѕ РїРµСЂРµРґ РїРµСЂРµРґР°РЅРЅС‹Рј
+	Node* del(Node*); //СѓРґР°Р»СЏРµС‚ РїРµСЂРµРґР°РЅРЅС‹Р№ Р°РґСЂРµСЃ СѓР·Р»Р° РёР· СЃРїРёСЃРєР° Рё РІРѕР·РІСЂР°С‰. РїСЂРµРґС‹РґСѓС‰. СѓР·РµР»
+	Node* getFirst() { return head; } //РІРѕР·РІСЂР°С‰Р°РµС‚ Р°РґСЂРµСЃ РєРѕСЂРЅСЏ СЃРїРёСЃРєР°
+	Node* getLast(); //РІРѕР·РІСЂР°С‰Р°РµС‚ Р°РґСЂРµСЃ РїРѕСЃР»РµРґРЅРµРіРѕ СѓР·Р»Р° СЃРїРёСЃРєР°
+	void swap(Node*, Node*); //РјРµРЅСЏРµС‚ РјРµСЃС‚Р°РјРё РґРІР° РїРµСЂРµРґР°РЅРЅС‹С… СѓР·Р»Р° РІ СЃРїРёСЃРєРµ
 };
 
 void List::add(int data, Node* node = nullptr)
 {
 
-	if (node == nullptr) //если переданный адрес - nullptr, добавляем узел в корень
+	if (node == nullptr) //РµСЃР»Рё РїРµСЂРµРґР°РЅРЅС‹Р№ Р°РґСЂРµСЃ - nullptr, РґРѕР±Р°РІР»СЏРµРј СѓР·РµР» РІ РєРѕСЂРµРЅСЊ
 	{
-		if (isEmpty()) //если корня нет - добавляем сразу в корень
+		if (isEmpty()) //РµСЃР»Рё РєРѕСЂРЅСЏ РЅРµС‚ - РґРѕР±Р°РІР»СЏРµРј СЃСЂР°Р·Сѓ РІ РєРѕСЂРµРЅСЊ
 		{
 			head = new Node;
 			head->field = data;
@@ -64,7 +64,7 @@ void List::add(int data, Node* node = nullptr)
 			head = ptr;
 		}
 	}
-	else //добавляем новый узел после полученной node
+	else //РґРѕР±Р°РІР»СЏРµРј РЅРѕРІС‹Р№ СѓР·РµР» РїРѕСЃР»Рµ РїРѕР»СѓС‡РµРЅРЅРѕР№ node
 	{
 		Node* ptr = new Node;
 		ptr->field = data;
@@ -81,10 +81,10 @@ void List::add(int data, Node* node = nullptr)
 
 void List::print()
 {
-	using std::cout; //using-директива
+	using std::cout; //using-РґРёСЂРµРєС‚РёРІР°
 	using std::endl;
 
-	if (isEmpty()) //если список пуст - нечего выводить
+	if (isEmpty()) //РµСЃР»Рё СЃРїРёСЃРѕРє РїСѓСЃС‚ - РЅРµС‡РµРіРѕ РІС‹РІРѕРґРёС‚СЊ
 		return;
 
 	Node* current = head;
@@ -107,11 +107,11 @@ void List::clear()
 	{
 		forDel = current;
 		current = current->next;
-		//forDel = current = current->next; иначе обращаемся к освобожденной памяти, что недопустимо: while (current != nullptr)
+		//forDel = current = current->next; РёРЅР°С‡Рµ РѕР±СЂР°С‰Р°РµРјСЃСЏ Рє РѕСЃРІРѕР±РѕР¶РґРµРЅРЅРѕР№ РїР°РјСЏС‚Рё, С‡С‚Рѕ РЅРµРґРѕРїСѓСЃС‚РёРјРѕ: while (current != nullptr)
 		delete forDel;
 	}
 	count = 0;
-	head = nullptr; //потому что высвобождение памяти не присваивает указателю nullptr
+	head = nullptr; //РїРѕС‚РѕРјСѓ С‡С‚Рѕ РІС‹СЃРІРѕР±РѕР¶РґРµРЅРёРµ РїР°РјСЏС‚Рё РЅРµ РїСЂРёСЃРІР°РёРІР°РµС‚ СѓРєР°Р·Р°С‚РµР»СЋ nullptr
 }
 
 Node* List::previous(Node* node)
@@ -162,16 +162,16 @@ void List::swap(Node* node1, Node* node2)
 	if (node1 == node2)
 		return;
 
-	//если node1 - корень списка, и за ним сраз же следует node2 
+	//РµСЃР»Рё node1 - РєРѕСЂРµРЅСЊ СЃРїРёСЃРєР°, Рё Р·Р° РЅРёРј СЃСЂР°Р· Р¶Рµ СЃР»РµРґСѓРµС‚ node2 
 	if (node1 == head && node1->next == node2) 
 	{
 		head = node2;
 		node1->next = node2->next; //node1 -> node3 
-		node2->next = node1;	   //node2 -> node1 итого node2 -> node1 -> node3
+		node2->next = node1;	   //node2 -> node1 РёС‚РѕРіРѕ node2 -> node1 -> node3
 		return;
 	}
 
-	//если переданные узлы - соседи друг-другу 
+	//РµСЃР»Рё РїРµСЂРµРґР°РЅРЅС‹Рµ СѓР·Р»С‹ - СЃРѕСЃРµРґРё РґСЂСѓРі-РґСЂСѓРіСѓ 
 	if (node1->next == node2)
 	{
 		Node* prevNode1, *current = head;
@@ -179,15 +179,15 @@ void List::swap(Node* node1, Node* node2)
 			current = current->next;
 
 		prevNode1 = current;
-		current = current->next; //current теперь указывает на node1 
+		current = current->next; //current С‚РµРїРµСЂСЊ СѓРєР°Р·С‹РІР°РµС‚ РЅР° node1 
 		prevNode1->next = node2; //node0 -> node2
 		current->next = node2->next; //node1 -> node3
-		node2->next = current;   //node2 -> node1, итого node0 -> node2 -> node1
+		node2->next = current;   //node2 -> node1, РёС‚РѕРіРѕ node0 -> node2 -> node1
 		
 
 	}
 	
-	//если данные узлы не соседи друг-другу
+	//РµСЃР»Рё РґР°РЅРЅС‹Рµ СѓР·Р»С‹ РЅРµ СЃРѕСЃРµРґРё РґСЂСѓРі-РґСЂСѓРіСѓ
 	if (node1 == head)
 	{
 		Node *prevNode2, *current = head;
@@ -195,7 +195,7 @@ void List::swap(Node* node1, Node* node2)
 			current = current->next;
 
 		prevNode2 = current;
-		current = current->next; //current теперь указывает на node2
+		current = current->next; //current С‚РµРїРµСЂСЊ СѓРєР°Р·С‹РІР°РµС‚ РЅР° node2
 
 		head = current;			 //head -> node2 
 		prevNode2->next = node1;
@@ -226,9 +226,9 @@ void List::swap(Node* node1, Node* node2)
 void start_list_class()
 {
 	List list;
-	list.add(5); //корень списка
-	list.add(4); //новый корень списка
-	list.add(6, list.getLast()); //узел, вставляющийся после текущего последнего элемента списка
+	list.add(5); //РєРѕСЂРµРЅСЊ СЃРїРёСЃРєР°
+	list.add(4); //РЅРѕРІС‹Р№ РєРѕСЂРµРЅСЊ СЃРїРёСЃРєР°
+	list.add(6, list.getLast()); //СѓР·РµР», РІСЃС‚Р°РІР»СЏСЋС‰РёР№СЃСЏ РїРѕСЃР»Рµ С‚РµРєСѓС‰РµРіРѕ РїРѕСЃР»РµРґРЅРµРіРѕ СЌР»РµРјРµРЅС‚Р° СЃРїРёСЃРєР°
 	list.add(7, list.getLast());
 
 	list.swap(list.next(list.getFirst()), list.getLast());
